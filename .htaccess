@@ -1,0 +1,25 @@
+Options -Indexes
+
+
+RewriteEngine On
+RewriteBase /demo/portfolios/voidart/
+RewriteRule ^/demo/portfolios/voidart/ index.php [L,NC]
+
+RewriteRule ^login login.php [L,NC]
+RewriteRule login.php ^login [L,NC]
+RewriteRule ^login login.php?error=1 [L,NC]
+RewriteRule ^login login.php?error=2 [NC]
+RewriteRule ^login login.php?error=3 [NC]
+
+
+
+RewriteRule ^register register.php [L,NC]
+RewriteRule register.php ^register [L,NC]
+RewriteRule ^register register.php?error=1 [L,NC]
+RewriteRule ^register register.php?error=2 [NC]
+RewriteRule ^register register.php?error=3 [NC]
+
+
+
+RewriteRule ^redirect redirect.php [L,NC]
+RewriteRule redirect.php ^redirect [L,NC]
